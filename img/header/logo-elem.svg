@@ -1,0 +1,12 @@
+<svg width="250" height="105" viewBox="0 0 250 105" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .text {
+        fill: #fff;
+        font-size: 36px;
+        font-family: "Raleway";
+      }
+    </style>
+    <polygon points="0,0 250,0 250,40 185,105 65,105, 0,40" fill="#ff0033" />
+    <polygon points="2,0 248,0 248,38 183,103 67,103, 2,38" fill="#000000" />
+    <text x="50%" y="50%" class="text" text-anchor="middle">Creativia</text>
+</svg>

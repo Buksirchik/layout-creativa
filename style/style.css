@@ -1,0 +1,163 @@
+/* header */
+
+.header {
+  background-color: #000;
+  border-top: 3px solid #333333;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.logo__link {
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation__burger {
+  margin: 10px 25px;
+}
+
+.burger-icon {
+  display: none;
+  position: relative;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/header/burger-sprite.png);
+}
+
+.burger-checkbox {
+  display: none;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  background: #000;
+}
+
+.navigation__link {
+  display: block;
+  position: relative;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #999999;
+  padding: 25px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation__link::before,
+.navigation__link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #ff0033;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.4s;
+}
+
+.navigation__link::before {
+  top: -3px;
+  height: 3px;
+}
+
+.navigation__link::after {
+  bottom: 0;
+  height: 2px;
+}
+
+.navigation__link:hover {
+  color: #ffffff;
+}
+
+.navigation__link:active {
+  color: #f790cd;
+}
+
+.navigation__link:hover::before,
+.navigation__link:hover::after {
+  transition: width 0.4s;
+  width: 27px;
+}
+
+.navigation__link:active::before,
+.navigation__link:active::after {
+  background-color: #d80483;
+}
+
+/* media query header */
+
+@media (max-width: 1078px) {
+  .navigation__link {
+    padding: 25px 6px;
+  }
+}
+
+@media (max-width: 935px) {
+  .navigation__list {
+    width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -3px;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+  .navigation__link {
+    padding: 15px 6px;
+  }
+  .navigation__link::before {
+    top: 0;
+    height: 2px;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .burger-checkbox:checked ~ .navigation__list {
+    width: 100%;
+    transition: 0.3s;
+    transform: translateX(0);
+  }
+  .burger-checkbox:checked ~ .burger-icon {
+    background-image: url(../img/header/burger-sprite.png);
+    background-position: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo__link {
+    width: 185px;
+  }
+}
+
+/* END header */
