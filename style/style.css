@@ -1,8 +1,93 @@
+/* common blocks */
+
+.title {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+.title_color_red {
+  color: #ff0033;
+}
+.subtitle {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  text-align: center;
+  margin-top: 50px;
+}
+.subtitle_color_red {
+  color: #ff0033;
+}
+.container {
+  max-width: 1170px;
+  margin: 95px auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.devider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.devider__line {
+  width: 100%;
+  max-width: 515px;
+  height: 1px;
+  background-color: #000;
+}
+.devider__hexagon {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: #000;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.devider__hexagon::before,
+.devider__hexagon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right: 6px solid black;
+  left: -16px;
+}
+.devider__hexagon::after {
+  border-right: 6px solid transparent;
+  border-left: 6px solid black;
+  left: 10px;
+}
+.devider_red .devider__hexagon,
+.devider_red .devider__line {
+  background-color: #ff0033;
+}
+.devider_red .devider__hexagon::before {
+  border-right-color: #ff0033;
+}
+.devider_red .devider__hexagon::after {
+  border-left-color: #ff0033;
+}
+/* media query common blocks */
+  @media (max-width: 1000px) {
+    .container {
+      margin: 50px auto;
+    }
+  }
+/* END common blocks */
+
 /* header */
 
 .header {
   background-color: #000;
   border-top: 3px solid #333333;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .header-container {
@@ -161,3 +246,141 @@
 }
 
 /* END header */
+
+/* about-us */
+.about-us__info-inner {
+  margin: 100px 0;
+}
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-info__discription,
+.about-photos {
+  width: 50%;
+}
+.about-info__text {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #666666;
+}
+.about-us__tabs {
+  margin-top: 40px;
+}
+.tab-item {
+  border: 1px solid #d4d4d4;
+}
+.tab__inner {
+  margin-top: 10px;
+}
+.tab__header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #d4d4d4;
+  cursor: pointer;
+  display: flex;
+}
+.tab__header:hover {
+  background-color: #d8d8d8;
+}
+.tab__icon {
+  width: 18px;
+  border-right: 1px solid #d4d4d4;
+  padding: 10px 15px;
+  background: url(../img/about_us/tab-open.svg) no-repeat center;
+}
+.tab-item.active .tab__icon {
+  background-image: url(../img/about_us/tab-close.svg);
+}
+.tab__title {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #ff0033;
+  padding: 10px 25px;
+}
+.tab__content {
+  font-family: "Lato";
+  font-size: 14px;
+  color: #666666;
+  line-height: 22px;
+  padding: 10px;
+}
+.about-photos {
+  display: flex;
+  justify-content: center;
+}
+.about-photos__img-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+.about-photos__img-wrap::before,
+.about-photos__img-wrap::after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(../img/about_us/about_us-3.png) no-repeat left;
+  position: absolute;
+  z-index: -1;
+}
+.about-photos__img-wrap::after {
+  background: url(../img/about_us/about_us-2.png) no-repeat right;
+}
+.about-photos__img {
+  display: block;
+  max-width: 100%;
+}
+.about-us__advantages {
+  margin-top: 70px;
+}
+.advantages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.advantages-item {
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
+  margin: 30px 7px 0;
+}
+.advantages-item__title {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
+}
+.advantages-item__text {
+  font-family: "lato";
+  font-size: 16px;
+  color: #666666;
+}
+
+/* media query about-us */
+
+@media (max-width: 1000px) {
+  .about-us__info-inner {
+    margin: 50px 0;
+  }
+  .about-info__discription,
+  .about-photos {
+    width: 100%;
+  }
+  .about-photos {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 530px) {
+  .about-photos__img-wrap::before,
+  .about-photos__img-wrap::after {
+    display: none;
+  }
+  .about-us__advantages {
+    margin-top: 50px;
+  }
+}
