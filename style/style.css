@@ -26,8 +26,8 @@
 }
 .container {
   max-width: 1170px;
-  margin: 95px auto;
-  padding: 0 15px;
+  margin: auto;
+  padding: 95px 15px;
   box-sizing: border-box;
 }
 .devider {
@@ -78,7 +78,7 @@
 /* media query common blocks */
 @media (max-width: 1000px) {
   .container {
-    margin: 50px auto;
+    padding: 50px 15px;
   }
 }
 /* END common blocks */
@@ -396,7 +396,7 @@
 .slider {
   position: relative;
 }
-.slide {
+.slider__slide {
   background: url(../img/main-slider/woman.jpg) center;
   background-size: cover;
   height: 100vh;
@@ -444,7 +444,7 @@
 .btn_bg-red {
   background-color: #ff0033;
 }
-.left-arrow, 
+.left-arrow,
 .right-arrow {
   position: absolute;
   top: 50%;
@@ -469,4 +469,79 @@
   .slide__text {
     max-width: 65%;
   }
+}
+
+/* END main-slider */
+
+/* portfolio */
+
+.portfolio {
+  background-color: #333333;
+  padding: 90px 0;
+}
+.control-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.slider-portfolio__control {
+  margin: 20px 0 80px;
+}
+.control__btn {
+  display: block;
+  border: none;
+  background: none;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
+  color: #999999;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.control__btn:hover {
+  color: #c1c1c1;
+}
+.control__btn:focus {
+  outline: none;
+  color: #ff0033;
+}
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+}
+.slide__item {
+  flex: auto;
+  position: relative;
+}
+.slide__img {
+  width: 100%;
+  height: 100%;
+}
+.slide__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000de;
+  transition: bottom 0.2s;
+}
+.slide__item:hover .slide__overlay {
+  bottom: 0;
+  transition: bottom 0.2s;
+}
+.slide__overlay-text {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
+}
+.overlay-text__inner {
+  margin-top: 25px;
 }
