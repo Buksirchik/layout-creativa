@@ -545,3 +545,125 @@
 .overlay-text__inner {
   margin-top: 25px;
 }
+
+/* END /* portfolio */
+
+/* features */
+.production {
+  display: flex;
+  justify-content: space-between;
+}
+.features__production {
+  margin-top: 90px;
+}
+.production-col {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 33%;
+  align-content: flex-start;
+}
+.production-item {
+  display: flex;
+  padding: 15px 7px;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #d4d4d4;
+  color: #333333;
+  max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.production-item:hover {
+  background-color: #ff0033;
+  color: #fff;
+}
+.production-item__text {
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.production-item__icon {
+  width: 37px;
+  height: 32px;
+  background-image: url(../img/production/sprite.png);
+}
+.production-item:hover .production-item__icon{
+  background-position: right;
+}
+.production-item__inner {
+  margin-top: 25px;
+}
+.production-text__inner {
+  padding-right: 15px;
+}
+.production-item_flex-flow-row-reverse {
+  flex-flow: row-reverse;
+}
+.production-item_flex-flow-row-reverse .production-text__inner {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.production-picture {
+  position: relative;
+}
+.production-picture__tablet {
+  width: 100%;
+}
+.production-picture__hexagon, 
+.production-picture__shape {
+  position: absolute;
+  width: 124%;
+  bottom: 0;
+  transform: translate(-10%, 28%);
+}
+.production-picture__shape {
+  z-index: -1;
+  transform: translate(-10%, 14%);
+}
+
+/* media query features */
+
+@media (max-width: 1150px) {
+  .production {
+    flex-direction: column;
+  }
+  .features__production {
+    margin-top: 40px;
+  }
+  .production-col {
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+  }
+  .production-item_flex-flow-row-reverse {
+    flex-flow: row;
+  }
+  .production-item_flex-flow-row-reverse .production-text__inner {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+  .production-item {
+    justify-content: flex-start;
+    max-width: none;
+  }
+  .production-picture {
+    width: 70%;
+    margin: 70px auto 120px;
+  }
+}
+@media (max-width: 520px) {
+  .production {
+    flex-direction: column;
+  }
+  .production-col {
+    width: 100%;
+  }
+  .production-item__text {
+    font-size: 16px;
+  }
+  .production-picture {
+    margin: 40px auto 50px;
+  }
+}
