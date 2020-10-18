@@ -75,6 +75,9 @@
 .devider_red .devider__hexagon::after {
   border-left-color: #ff0033;
 }
+.bg-dark {
+  background-color: #333333;
+}
 /* media query common blocks */
 @media (max-width: 1000px) {
   .container {
@@ -476,7 +479,6 @@
 /* portfolio */
 
 .portfolio {
-  background-color: #333333;
   padding: 90px 0;
 }
 .control-block {
@@ -1008,5 +1010,104 @@
 @media (max-width: 810px) {
   .skill-block {
     margin-top: 20px;
+  }
+}
+
+/* services block */
+.services-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-block__inner {
+  margin-top: 50px;
+}
+.services-item {
+  flex-basis: 563px;
+}
+.services-item__inner {
+  margin: 50px 0 0;
+}
+.services-item__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.services-item__icon {
+  width: 66px;
+  height: 57px;
+  background: url(../img/services/sprite.png) 0 57px;
+  flex-shrink: 0;
+}
+.services-item__html {
+  background-position: 313px 57px;
+}
+.services-item__wp {
+  background-position: 396px 57px;
+}
+.services-item__app {
+  background-position: 231px 57px;
+}
+.services-item__ui {
+  background-position: 149px 57px;
+}
+.services-item__responsive {
+  background-position: 67px 57px;
+}
+.services-item__title {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sercvices-title__inner {
+  margin-left: 30px;
+}
+.services-item__description {
+  background-color: #272727;
+  padding: 25px;
+  font-family: 'Lato';
+  font-size: 16px;
+  color: #999999;
+}
+.services-item:hover .services-item__description{
+  background-color: #330000;
+}
+.services-item:hover .services-item__icon {
+  background-position: 0px 0px;
+}
+.services-item:hover .services-item__html {
+  background-position: 313px 0px;
+}
+.services-item:hover .services-item__wp {
+  background-position: 396px 0px;
+}
+.services-item:hover .services-item__app {
+  background-position: 231px 0px;
+}
+.services-item:hover .services-item__ui {
+  background-position: 149px 0px;
+}
+.services-item:hover .services-item__responsive {
+  background-position: 67px 0px;
+}
+
+/* mediq query services block*/
+
+@media (max-width: 1150px) {
+  .services-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-item {
+    flex-basis: auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-block__inner {
+    margin-top: 15px;
   }
 }

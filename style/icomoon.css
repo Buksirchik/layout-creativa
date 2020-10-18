@@ -22,8 +22,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
 .icon-plus:before {
   content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-embed2:before {
+  content: "\ea80";
 }
 .icon-google-plus:before {
   content: "\ea8b";
@@ -33,4 +48,10 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-wordpress:before {
+  content: "\eab4";
+}
+.icon-html-five2:before {
+  content: "\eae5";
 }
