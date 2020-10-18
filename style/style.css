@@ -670,7 +670,7 @@
 
 /* END features */
 
-/* clients */
+/* clients block */
 .clients {
   background: url(../img/clients/bg.jpg);
   position: relative;
@@ -793,7 +793,7 @@
 .codecanyon {
   background-position: 77px;
 }
-/* media query clients */
+/* media query clients block */
 @media (max-width: 1150px) {
   .clients-content {
     flex-direction: column;
@@ -826,3 +826,98 @@
     margin: 30px 0 15px;
   }
 }
+/* END clients block */
+
+/* team block */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.teamwork__team {
+  margin-top: 50px;
+}
+.team-item {
+  width: 270px;
+}
+.team-item__inner {
+  margin: 50px 8px 0;
+}
+.team-item__avatar {
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+}
+.team-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.social {
+  display: flex;
+}
+.social__link {
+  display: block;
+  width: 45px;
+  height: 41px;
+  background: url(../img/team/hexagon.png);
+  text-decoration: none;
+  color: #ff0033;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 5px;
+}
+.social__link::before {
+  line-height: 41px;
+}
+.social__link:hover {
+  color: #ff6b88;
+}
+.social__link:active {
+  color: #bd062a;
+}
+.team-item__img {
+  display: block;
+  width: 100%;
+}
+.team-item__info {
+  border: 1px solid #d8d8d8;
+  padding: 30px 0;
+}
+.team-item__name {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team-item__job {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+}
+.team-job__inner {
+  margin-top: 20px;
+}
+.team-item:hover .team-item__overlay{
+  bottom: 0;
+  transition: 0.3s;
+}
+.team-item:hover .team-item__name {
+  color: #ff0033;
+}
+.team-item:hover .team-item__info {
+  border-color: #333333;
+}
+/* END team block */
