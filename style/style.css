@@ -910,7 +910,7 @@
 .team-job__inner {
   margin-top: 20px;
 }
-.team-item:hover .team-item__overlay{
+.team-item:hover .team-item__overlay {
   bottom: 0;
   transition: 0.3s;
 }
@@ -921,3 +921,92 @@
   border-color: #333333;
 }
 /* END team block */
+
+/* skill block */
+.skill-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.our-skills__skill-block {
+  margin-top: 100px;
+}
+.skill-item {
+  width: 165px;
+}
+.skill-item__inner {
+  margin: 50px 15px 0;
+}
+.progress {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.circle-in {
+  width: 137px;
+  height: 137px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(4px, 4px);
+}
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #ff0033;
+  position: absolute;
+  left: -10%;
+}
+.progress-bar_left-20 {
+  left: -20%;
+}
+.progress-bar_left-30 {
+  left: -30%;
+}
+.progress__status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress__percent {
+  font-family: "Lato";
+  font-size: 40px;
+  color: #ff0033;
+  font-weight: 100;
+}
+.progress__percent_color-black {
+  color: #000;
+}
+.skill-item__description {
+  text-align: center;
+}
+.skill-item__title {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.skill-title__inner {
+  margin: 20px 0;
+}
+.skill-item__text {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #666666;
+}
+/* media query skill block */
+@media (max-width: 810px) {
+  .skill-block {
+    margin-top: 20px;
+  }
+}
