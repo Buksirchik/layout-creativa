@@ -1049,7 +1049,7 @@
   background-position: 231px 57px;
 }
 .services-item__ui {
-  background-position: 149px 57px;
+  background-position: 148px 57px;
 }
 .services-item__responsive {
   background-position: 67px 57px;
@@ -1093,7 +1093,7 @@
   background-position: 67px 0px;
 }
 
-/* mediq query services block*/
+/* mediq query services block */
 
 @media (max-width: 1150px) {
   .services-block {
@@ -1111,3 +1111,78 @@
     margin-top: 15px;
   }
 }
+
+/* END services block */
+
+/* plans block */
+
+.plans-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plans-block__inner {
+  margin-top: 50px;
+}
+.plan-item {
+  text-align: center;
+  flex-basis: 270px;
+  cursor: pointer;
+}
+.plan-item__inner {
+  margin: 50px 8px 0;
+}
+.plan-item__title {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #333333;
+  padding: 15px;
+}
+.plan-item__price {
+  font-family: "Lato";
+  font-size: 50px;
+  color: #333333;
+  font-weight: 900;
+  padding: 15px 0;
+  background-color: #d4d4d4;
+}
+.plan-item__price_font-size-16 {
+  font-size: 16px;
+  font-weight: 400;
+} 
+.plan-item__info {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #333333;
+  padding: 15px 5px;
+  border: 1px solid #d4d4d4;
+  border-top: none;
+}
+.plan-item__link {
+  display: block;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 5px;
+  width: 230px;
+  box-sizing: border-box;
+  background-color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.plan-link__inner {
+  margin: auto;
+}
+.plan-item:hover .plan-item__price,
+.plan-item:hover .plan-item__link {
+  background-color: #ff0033;
+  color: #fff;
+}
+.plan-item .plan-item__link:active {
+  background-color: #ff6b88;
+}
+
+/* END plans block */
