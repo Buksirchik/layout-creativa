@@ -1186,3 +1186,43 @@
 }
 
 /* END plans block */
+
+/* tweets block */
+.tweets {
+  background-image: url(../img/tweets/twitter.png);
+  background-repeat: no-repeat;
+  background-position: 28px bottom;
+}
+.tweets-block {
+  display: flex;
+  justify-content: center;
+}
+.tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tweet__icon {
+  font-size: 50px;
+  color: #fff;
+}
+.tweet__icon:hover {
+  color: #ff0033;
+}
+.tweet__text {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.tweet-text__inner {
+  margin-top: 25px;
+}
+/* media query tweets block */
+@media (max-width: 1000px) {
+  .tweets {
+    background-image: none;
+  }
+}
+
+/* END tweets block */
