@@ -1,16 +1,14 @@
 @font-face {
   font-family: 'icomoon';
-  src: url(../fonts/icomoon.eot) format("eot"), 
-       url(../fonts/icomoon.woff) format("woff"), 
-       url(../fonts/icomoon.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff')
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -30,6 +28,15 @@
 }
 .icon-mobile2:before {
   content: "\e959";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-eye:before {
+  content: "\e9ce";
 }
 .icon-plus:before {
   content: "\ea0a";
