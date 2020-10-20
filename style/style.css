@@ -1067,11 +1067,11 @@
 .services-item__description {
   background-color: #272727;
   padding: 25px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 16px;
   color: #999999;
 }
-.services-item:hover .services-item__description{
+.services-item:hover .services-item__description {
   background-color: #330000;
 }
 .services-item:hover .services-item__icon {
@@ -1152,7 +1152,7 @@
 .plan-item__price_font-size-16 {
   font-size: 16px;
   font-weight: 400;
-} 
+}
 .plan-item__info {
   font-family: "Lato";
   font-size: 16px;
@@ -1343,3 +1343,30 @@
   }
 }
 /* END blog */
+
+/* social-media */
+.social-media {
+  background: url(../img/social-media/bg.png) no-repeat;
+  background-size: cover;
+}
+.social-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-media__link {
+  margin-top: 50px;
+}
+.link-item__count {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.link-count__inner {
+  margin-top: 30px;
+}
+.link__inner {
+  margin: 50px 15px 0;
+}
+/* END social-media */

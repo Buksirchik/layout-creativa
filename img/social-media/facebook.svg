@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px" height="68px">
+  <style>
+    .hexagon {
+      fill: transparent;
+      stroke: #ff0033;
+    }
+
+    .text {
+      fill: #ff0033;
+    }
+
+    g:hover .hexagon {
+      fill: #ff0033;
+    }
+
+    g:hover .text {
+      fill: #fff;
+    }
+  </style>
+  <g>
+    <path class="hexagon" d="M 19.3 68 L 0.6 34 L 19.3 0 L 56.8 0 L 75.6 34 L 56.8 68 L 19.3 68 Z" />
+    <path class="text"
+      d="M 40.7 24.1 h 5 v -6 h -5 c -3.9 0 -7 3.1 -7 7 v 3 h -4 v 6 h 4 v 16 h 6 v -16 h 5 l 1 -6 h -6 v -3 c 0 -0.5 0.5 -1 1 -1 z">
+    </path>
+  </g>
+
+</svg>
