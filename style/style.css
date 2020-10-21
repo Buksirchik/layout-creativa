@@ -1444,9 +1444,9 @@ body {
   right: 5%;
 }
 .form-container {
-  max-width: 380px;
   padding: 40px 40px;
   box-shadow: 0 0 5px #ababab;
+  box-sizing: border-box;
 }
 .form__title {
   font-family: "Raleway";
