@@ -49,8 +49,8 @@ $(document).ready(function () {
   const blogs = document.querySelectorAll(".blog-item")
 
   btn.onclick = function() {
-    for (let item of blogs) {
-      const cloneItem = item.cloneNode(true)
+    for (let i = 0; i < blogs.length; i++) {
+      const cloneItem = blogs[i].cloneNode(true)
       container.append(cloneItem)
     }
   }
