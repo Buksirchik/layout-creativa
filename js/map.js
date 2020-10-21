@@ -7,16 +7,14 @@ ymaps.ready(function () {
     }),
     // Создание макета балуна .
     MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
-      `
-      <address class="address">
-        <a class="close">X</a>
-        gypt, creativia <br />
-        Address: cairo 123 <br />
-        Phone: +0201091915171 <br />
-        Email: gfx3mr@gmail.com
-        <div class="arrow"></div>
-      </address>
-      `,
+      '<address class="address">' +
+        '<a class="close">X</a>' +
+        'gypt, creativia <br />' +
+        'Address: cairo 123 <br />' +
+       ' Phone: +0201091915171 <br />' +
+        'Email: gfx3mr@gmail.com' +
+        '<div class="arrow"></div>' +
+      '</address>',
       {
         /**
          * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.

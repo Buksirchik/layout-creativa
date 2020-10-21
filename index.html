@@ -8,17 +8,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/normolize.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/slick.css" />
     <link rel="stylesheet" href="./style/icomoon.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=89257bb0-c427-4e47-be8d-f54014775383&lang=ru_RU"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=89257bb0-c427-4e47-be8d-f54014775383&lang=ru_RU"></script>
+    <script src="./js/slick.min.js"></script>
     <title>Creativia</title>
   </head>
 
@@ -108,48 +107,58 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main class="main">
         <section class="main-slider">
           <div class="slider">
-            <div class="slider__slide">
-              <div class="slide__content">
-                <h3 class="title">
-                  <span class="title title_color_white">why</span>
-                  <span class="title title_color_red">creativia ?</span>
-                </h3>
-                <p class="slide__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                  dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
-                  Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris
-                  dictum lorem eu tortor porta placerat. Suspendisse ac
-                  vestibulum eros. Nulla mi ipsum, consequat commodo condimentum
-                  vitae,
-                </p>
-                <div class="slide__btn-wrap">
-                  <a class="btn btn_bg-red" href="index.html">features</a>
-                  <a class="btn" href="index.html">free psd</a>
+            <div class="slids-wrap">
+              <div class="slider__slide">
+                <div class="slide__content">
+                  <h3 class="title">
+                    <span class="title title_color_white">why</span>
+                    <span class="title title_color_red">creativia ?</span>
+                  </h3>
+                  <p class="slide__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et dolor justo. Phasellus eu ligula ac nisl volutpat
+                    tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
+                    erat. Mauris dictum lorem eu tortor porta placerat.
+                    Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat
+                    commodo condimentum vitae,
+                  </p>
+                  <div class="slide__btn-wrap">
+                    <a class="btn btn_bg-red" href="index.html">features</a>
+                    <a class="btn" href="index.html">free psd</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="slide__content">
+                  <h3 class="title">
+                    <span class="title title_color_white">why</span>
+                    <span class="title title_color_red">creativia ?</span>
+                  </h3>
+                  <p class="slide__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et dolor justo. Phasellus eu ligula ac nisl volutpat
+                    tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
+                    erat. Mauris dictum lorem eu tortor porta placerat.
+                    Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat
+                    commodo condimentum vitae,
+                  </p>
+                  <div class="slide__btn-wrap">
+                    <a class="btn btn_bg-red" href="index.html">features</a>
+                    <a class="btn" href="index.html">free psd</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="slider-control">
-              <div class="slider__left-arrow">
-                <object
-                  class="left-arrow"
-                  data="./img/main-slider/left-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
-              </div>
-              <div class="slider__right-arrow">
-                <object
-                  class="right-arrow"
-                  data="./img/main-slider/right-arrow.svg"
-                  type="image/svg+xml"
-                ></object>
-              </div>
+              <div class="slider__left-arrow"></div>
+              <div class="slider__right-arrow"></div>
             </div>
           </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about_us">
           <div class="container">
             <h2 class="title">
               about <span class="title title_color_red">creativa</span>
@@ -171,7 +180,7 @@
                   vitae,
                 </p>
                 <div class="tabs about-us__tabs">
-                  <div class="tab-item active tab__inner">
+                  <div class="tab-item tab__inner">
                     <div class="tab__header">
                       <div class="tab__icon"></div>
                       <h4 class="tab__title">Hwo is creativia</h4>
@@ -274,135 +283,402 @@
             </div>
           </div>
         </section>
-        <section class="portfolio bg-dark">
+        <section class="portfolio bg-dark" id="portfolio">
           <h2 class="title title_color_white">portfolio</h2>
           <div class="slider-portfolio">
-            <div class="control-block slider-portfolio__control">
-              <button class="control__btn">all</button>
-              <button class="control__btn">Illustration</button>
-              <button class="control__btn">Digital Art</button>
-              <button class="control__btn">Web design</button>
-            </div>
-            <div class="slide">
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+            <div class="control-block-wrap slider-portfolio__control"></div>
+            <div class="slider-container">
+              <div class="slide">
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-1.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-1.png"
-                />
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-2.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-3.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-4.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-5.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-6.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-7.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-8.png"
+                  />
+                </div>
               </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+              <div class="slide">
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-1.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-2.png"
-                />
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-2.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-3.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-4.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-5.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-6.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-7.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-8.png"
+                  />
+                </div>
               </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+              <div class="slide">
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-1.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-3.png"
-                />
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-2.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-3.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-4.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-5.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-6.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-7.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-8.png"
+                  />
+                </div>
               </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+              <div class="slide">
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-1.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-4.png"
-                />
-              </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-2.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-5.png"
-                />
-              </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-3.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-6.png"
-                />
-              </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-4.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-7.png"
-                />
-              </div>
-              <div class="slide__item">
-                <div class="slide__overlay">
-                  <object
-                    data="./img/portfolio/slider/icon.svg"
-                    type="image/svg+xml"
-                  ></object>
-                  <p class="slide__overlay-text overlay-text__inner">
-                    design name
-                  </p>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-5.png"
+                  />
                 </div>
-                <img
-                  class="slide__img"
-                  src="./img/portfolio/slider/portfolio-8.png"
-                />
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-6.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-7.png"
+                  />
+                </div>
+                <div class="slide__item">
+                  <div class="slide__overlay">
+                    <span class="slide__overlay-icon icon-plus"></span>
+                    <p class="slide__overlay-text overlay-text__inner">
+                      design name
+                    </p>
+                  </div>
+                  <img
+                    class="slide__img"
+                    src="./img/portfolio/slider/portfolio-8.png"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -459,7 +735,9 @@
                   src="./img/production/tablet.png"
                   alt="tablet"
                 />
-                <a class="btn btn_bg-gray production__btn" href="index.html">free psd</a>
+                <a class="btn btn_bg-gray production__btn" href="index.html"
+                  >free psd</a
+                >
               </div>
               <div class="production-col">
                 <div
@@ -490,7 +768,7 @@
             </div>
           </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
           <div class="container">
             <h2 class="title">
               <span class="title title_color_white">our</span>
@@ -507,26 +785,54 @@
                 <h3 class="clients-slider__title slider-title__inner">
                   happy clients say
                 </h3>
-                <div class="clients-slide">
-                  <p class="clients-slide__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer sed magna vel velit dignissim luctus eu in urna.
-                    Dapibus egestas turpis.
-                  </p>
-                  <div class="person clients-slide__person">
-                    <img
-                      src="./img/clients/avatar.png"
-                      alt="amr srour"
-                      class="person__avatar"
-                    />
-                    <p class="person__name person-name__inner">amr srour</p>
+                <div class="clients-slider-container">
+                  <div class="clients-slide">
+                    <p class="clients-slide__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer sed magna vel velit dignissim luctus eu in urna.
+                      Dapibus egestas turpis.
+                    </p>
+                    <div class="person clients-slide__person">
+                      <img
+                        src="./img/clients/avatar.png"
+                        alt="amr srour"
+                        class="person__avatar"
+                      />
+                      <p class="person__name person-name__inner">amr srour</p>
+                    </div>
+                  </div>
+                  <div class="clients-slide">
+                    <p class="clients-slide__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer sed magna vel velit dignissim luctus eu in urna.
+                      Dapibus egestas turpis.
+                    </p>
+                    <div class="person clients-slide__person">
+                      <img
+                        src="./img/clients/avatar.png"
+                        alt="amr srour"
+                        class="person__avatar"
+                      />
+                      <p class="person__name person-name__inner">amr srour</p>
+                    </div>
+                  </div>
+                  <div class="clients-slide">
+                    <p class="clients-slide__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer sed magna vel velit dignissim luctus eu in urna.
+                      Dapibus egestas turpis.
+                    </p>
+                    <div class="person clients-slide__person">
+                      <img
+                        src="./img/clients/avatar.png"
+                        alt="amr srour"
+                        class="person__avatar"
+                      />
+                      <p class="person__name person-name__inner">amr srour</p>
+                    </div>
                   </div>
                 </div>
-                <div class="clients-slider__control">
-                  <button class="clients-slider__btn"></button>
-                  <button class="clients-slider__btn"></button>
-                  <button class="clients-slider__btn"></button>
-                </div>
+                <div class="slider-control-wrap"></div>
               </div>
               <div class="clients-media">
                 <div class="clients-img clients-img__inner">
@@ -553,7 +859,7 @@
             <div class="devider__hexagon"></div>
           </div>
         </section>
-        <section class="teamwork">
+        <section class="teamwork" id="team">
           <div class="container">
             <h2 class="title">
               our <span class="title title_color_red">teamwork</span>
@@ -743,7 +1049,7 @@
             </div>
           </div>
         </section>
-        <section class="services bg-dark">
+        <section class="services bg-dark" id="services">
           <div class="container">
             <h2 class="title">
               <span class="title title_color_white">our</span>
@@ -967,7 +1273,7 @@
             </div>
           </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
           <div class="devider devider_red">
             <div class="devider__line"></div>
             <div class="devider__hexagon"></div>
@@ -1113,7 +1419,7 @@
             </div>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="devider devider_red">
             <div class="devider__line"></div>
             <div class="devider__hexagon"></div>
@@ -1178,5 +1484,6 @@
       </footer>
     </div>
     <script src="./js/map.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
