@@ -10,1088 +10,1173 @@
     <link rel="stylesheet" href="./style/normolize.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/icomoon.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=89257bb0-c427-4e47-be8d-f54014775383&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <title>Creativia</title>
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-container">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img
-              class="logo__img"
-              src="./img/header/logo-elem.svg"
-              alt="logo Creativia"
+    <div class="page">
+      <header class="header">
+        <div class="header-container">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img
+                class="logo__img"
+                src="./img/header/logo-elem.svg"
+                alt="logo Creativia"
+              />
+            </a>
+          </div>
+          <nav class="navigation">
+            <input
+              class="burger-checkbox"
+              id="burger-checkbox"
+              type="checkbox"
             />
-          </a>
+            <label for="burger-checkbox" class="burger-icon navigation__burger">
+            </label>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html" title="home">
+                  Home
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link"
+                  href="index.html#about_us"
+                  title="about-us"
+                >
+                  About us
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link"
+                  href="index.html#portfolio"
+                  title="portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link"
+                  href="index.html#clients"
+                  title="clients"
+                >
+                  Clients
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html#team" title="team">
+                  Team
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link"
+                  href="index.html#services"
+                  title="services"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html#blog" title="blog">
+                  Blog
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link"
+                  href="index.html#contact"
+                  title="contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navigation">
-          <input class="burger-checkbox" id="burger-checkbox" type="checkbox" />
-          <label for="burger-checkbox" class="burger-icon navigation__burger">
-          </label>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html" title="home">
-                Home
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link"
-                href="index.html#about_us"
-                title="about-us"
-              >
-                About us
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link"
-                href="index.html#portfolio"
-                title="portfolio"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link"
-                href="index.html#clients"
-                title="clients"
-              >
-                Clients
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html#team" title="team">
-                Team
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link"
-                href="index.html#services"
-                title="services"
-              >
-                Services
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html#blog" title="blog">
-                Blog
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link"
-                href="index.html#contact"
-                title="contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="main-slider">
-        <div class="slider">
-          <div class="slider__slide">
-            <div class="slide__content">
-              <h3 class="title">
-                <span class="title title_color_white">why</span>
-                <span class="title title_color_red">creativia ?</span>
-              </h3>
-              <p class="slide__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
-                Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum
-                lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
-                Nulla mi ipsum, consequat commodo condimentum vitae,
-              </p>
-              <div class="slide__btn-wrap">
-                <a class="btn btn_bg-red" href="index.html">features</a>
-                <a class="btn" href="index.html">free psd</a>
-              </div>
-            </div>
-          </div>
-          <div class="slider-control">
-            <div class="slider__left-arrow">
-              <object
-                class="left-arrow"
-                data="./img/main-slider/left-arrow.svg"
-                type="image/svg+xml"
-              ></object>
-            </div>
-            <div class="slider__right-arrow">
-              <object
-                class="right-arrow"
-                data="./img/main-slider/right-arrow.svg"
-                type="image/svg+xml"
-              ></object>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about-us">
-        <div class="container">
-          <h2 class="title">
-            about <span class="title title_color_red">creativa</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <article class="about-info about-us__info-inner">
-            <div class="about-info__discription">
-              <p class="about-info__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
-                Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum
-                lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
-                Nulla mi ipsum, consequat commodo condimentum vitae,
-              </p>
-              <div class="tabs about-us__tabs">
-                <div class="tab-item active tab__inner">
-                  <div class="tab__header">
-                    <div class="tab__icon"></div>
-                    <h4 class="tab__title">Hwo is creativia</h4>
-                  </div>
-                  <p class="tab__content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    et dolor justo. Phasellus eu ligula ac nisl volutpat
-                    tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
-                    erat. Mauris dictum lorem eu tortor porta placerat.
-                    Suspendisse ac vestibulum eros.
-                  </p>
-                </div>
-                <div class="tab-item tab__inner">
-                  <div class="tab__header">
-                    <div class="tab__icon"></div>
-                    <h4 class="tab__title">Experiences</h4>
-                  </div>
-                  <p class="tab__content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    et dolor justo. Phasellus eu ligula ac nisl volutpat
-                    tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
-                    erat. Mauris dictum lorem eu tortor porta placerat.
-                    Suspendisse ac vestibulum eros.
-                  </p>
-                </div>
-                <div class="tab-item tab__inner">
-                  <div class="tab__header">
-                    <div class="tab__icon"></div>
-                    <h4 class="tab__title">Learn more</h4>
-                  </div>
-                  <p class="tab__content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    et dolor justo. Phasellus eu ligula ac nisl volutpat
-                    tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
-                    erat. Mauris dictum lorem eu tortor porta placerat.
-                    Suspendisse ac vestibulum eros.
-                  </p>
+      </header>
+      <main>
+        <section class="main-slider">
+          <div class="slider">
+            <div class="slider__slide">
+              <div class="slide__content">
+                <h3 class="title">
+                  <span class="title title_color_white">why</span>
+                  <span class="title title_color_red">creativia ?</span>
+                </h3>
+                <p class="slide__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
+                  Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris
+                  dictum lorem eu tortor porta placerat. Suspendisse ac
+                  vestibulum eros. Nulla mi ipsum, consequat commodo condimentum
+                  vitae,
+                </p>
+                <div class="slide__btn-wrap">
+                  <a class="btn btn_bg-red" href="index.html">features</a>
+                  <a class="btn" href="index.html">free psd</a>
                 </div>
               </div>
             </div>
-            <div class="about-photos">
-              <div class="about-photos__img-wrap">
+            <div class="slider-control">
+              <div class="slider__left-arrow">
+                <object
+                  class="left-arrow"
+                  data="./img/main-slider/left-arrow.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="slider__right-arrow">
+                <object
+                  class="right-arrow"
+                  data="./img/main-slider/right-arrow.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="container">
+            <h2 class="title">
+              about <span class="title title_color_red">creativa</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <article class="about-info about-us__info-inner">
+              <div class="about-info__discription">
+                <p class="about-info__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
+                  Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris
+                  dictum lorem eu tortor porta placerat. Suspendisse ac
+                  vestibulum eros. Nulla mi ipsum, consequat commodo condimentum
+                  vitae,
+                </p>
+                <div class="tabs about-us__tabs">
+                  <div class="tab-item active tab__inner">
+                    <div class="tab__header">
+                      <div class="tab__icon"></div>
+                      <h4 class="tab__title">Hwo is creativia</h4>
+                    </div>
+                    <p class="tab__content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut et dolor justo. Phasellus eu ligula ac nisl volutpat
+                      tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
+                      erat. Mauris dictum lorem eu tortor porta placerat.
+                      Suspendisse ac vestibulum eros.
+                    </p>
+                  </div>
+                  <div class="tab-item tab__inner">
+                    <div class="tab__header">
+                      <div class="tab__icon"></div>
+                      <h4 class="tab__title">Experiences</h4>
+                    </div>
+                    <p class="tab__content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut et dolor justo. Phasellus eu ligula ac nisl volutpat
+                      tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
+                      erat. Mauris dictum lorem eu tortor porta placerat.
+                      Suspendisse ac vestibulum eros.
+                    </p>
+                  </div>
+                  <div class="tab-item tab__inner">
+                    <div class="tab__header">
+                      <div class="tab__icon"></div>
+                      <h4 class="tab__title">Learn more</h4>
+                    </div>
+                    <p class="tab__content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut et dolor justo. Phasellus eu ligula ac nisl volutpat
+                      tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim
+                      erat. Mauris dictum lorem eu tortor porta placerat.
+                      Suspendisse ac vestibulum eros.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about-photos">
+                <div class="about-photos__img-wrap">
+                  <img
+                    class="about-photos__img"
+                    src="./img/about_us/about_us-1.png"
+                    alt="about-us"
+                  />
+                </div>
+              </div>
+            </article>
+            <div class="devider">
+              <div class="devider__line"></div>
+              <div class="devider__hexagon"></div>
+            </div>
+            <div class="advantages about-us__advantages">
+              <div class="advantages-item">
+                <object
+                  data="./img/about_us/flat-disign.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4 class="advantages-item__title">flat design</h4>
+                <p class="advantages-item__text">
+                  Lorem ipsum dolor sit amet cras vitae sodales ac nec
+                  prellentesque vivamus eget mauris fusce sit amet
+                </p>
+              </div>
+              <div class="advantages-item">
+                <object
+                  data="./img/about_us/retina-ready.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4 class="advantages-item__title">retina ready</h4>
+                <p class="advantages-item__text">
+                  Lorem ipsum dolor sit amet cras vitae sodales ac nec
+                  prellentesque vivamus eget mauris fusce sit amet
+                </p>
+              </div>
+              <div class="advantages-item">
+                <object
+                  data="./img/about_us/responsive.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4 class="advantages-item__title">responsive</h4>
+                <p class="advantages-item__text">
+                  Lorem ipsum dolor sit amet cras vitae sodales ac nec
+                  prellentesque vivamus eget mauris fusce sit amet
+                </p>
+              </div>
+              <div class="advantages-item">
+                <object
+                  data="./img/about_us/useful.svg"
+                  type="image/svg+xml"
+                ></object>
+                <h4 class="advantages-item__title">clean &amp; useful</h4>
+                <p class="advantages-item__text">
+                  Lorem ipsum dolor sit amet cras vitae sodales ac nec
+                  prellentesque vivamus eget mauris fusce sit amet
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio bg-dark">
+          <h2 class="title title_color_white">portfolio</h2>
+          <div class="slider-portfolio">
+            <div class="control-block slider-portfolio__control">
+              <button class="control__btn">all</button>
+              <button class="control__btn">Illustration</button>
+              <button class="control__btn">Digital Art</button>
+              <button class="control__btn">Web design</button>
+            </div>
+            <div class="slide">
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
                 <img
-                  class="about-photos__img"
-                  src="./img/about_us/about_us-1.png"
-                  alt="about-us"
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-1.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-2.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-3.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-4.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-5.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-6.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-7.png"
+                />
+              </div>
+              <div class="slide__item">
+                <div class="slide__overlay">
+                  <object
+                    data="./img/portfolio/slider/icon.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  <p class="slide__overlay-text overlay-text__inner">
+                    design name
+                  </p>
+                </div>
+                <img
+                  class="slide__img"
+                  src="./img/portfolio/slider/portfolio-8.png"
                 />
               </div>
             </div>
-          </article>
+          </div>
+        </section>
+        <section class="features">
+          <div class="devider devider_red">
+            <div class="devider__line"></div>
+            <div class="devider__hexagon"></div>
+          </div>
+          <div class="container">
+            <h2 class="title">
+              our <span class="title title_color_red">product features</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="production features__production">
+              <div class="production-col">
+                <div class="production-item production-item__inner">
+                  <p class="production-item__text production-text__inner">
+                    unlimited color options
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+                <div class="production-item production-item__inner">
+                  <p class="production-item__text production-text__inner">
+                    outstanding support
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+                <div class="production-item production-item__inner">
+                  <p class="production-item__text production-text__inner">
+                    retina ready
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+              </div>
+              <div class="production-picture production-picture__inner">
+                <img
+                  class="production-picture__hexagon"
+                  src="./img/production/shape-1.png"
+                  alt="hexagon"
+                />
+                <img
+                  class="production-picture__shape"
+                  src="./img/production/shape-2.png"
+                  alt="shape"
+                />
+                <img
+                  class="production-picture__tablet"
+                  src="./img/production/tablet.png"
+                  alt="tablet"
+                />
+                <a class="btn btn_bg-gray production__btn" href="index.html">free psd</a>
+              </div>
+              <div class="production-col">
+                <div
+                  class="production-item production-item__inner production-item_flex-flow-row-reverse"
+                >
+                  <p class="production-item__text production-text__inner">
+                    unlimited color options
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+                <div
+                  class="production-item production-item__inner production-item_flex-flow-row-reverse"
+                >
+                  <p class="production-item__text production-text__inner">
+                    outstanding support
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+                <div
+                  class="production-item production-item__inner production-item_flex-flow-row-reverse"
+                >
+                  <p class="production-item__text production-text__inner">
+                    retina ready
+                  </p>
+                  <div class="production-item__icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="clients">
+          <div class="container">
+            <h2 class="title">
+              <span class="title title_color_white">our</span>
+              <span class="title title_color_red">clients</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="clients-content">
+              <div class="clients-slider">
+                <h3 class="clients-slider__title slider-title__inner">
+                  happy clients say
+                </h3>
+                <div class="clients-slide">
+                  <p class="clients-slide__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna.
+                    Dapibus egestas turpis.
+                  </p>
+                  <div class="person clients-slide__person">
+                    <img
+                      src="./img/clients/avatar.png"
+                      alt="amr srour"
+                      class="person__avatar"
+                    />
+                    <p class="person__name person-name__inner">amr srour</p>
+                  </div>
+                </div>
+                <div class="clients-slider__control">
+                  <button class="clients-slider__btn"></button>
+                  <button class="clients-slider__btn"></button>
+                  <button class="clients-slider__btn"></button>
+                </div>
+              </div>
+              <div class="clients-media">
+                <div class="clients-img clients-img__inner">
+                  <div class="clients-img__icon"></div>
+                  <p class="clients-img__text">graphicriver</p>
+                </div>
+                <div class="clients-img clients-img__inner">
+                  <div class="clients-img__icon videohive"></div>
+                  <p class="clients-img__text">videohive</p>
+                </div>
+                <div class="clients-img clients-img__inner">
+                  <div class="clients-img__icon photodune"></div>
+                  <p class="clients-img__text">photodune</p>
+                </div>
+                <div class="clients-img clients-img__inner">
+                  <div class="clients-img__icon codecanyon"></div>
+                  <p class="clients-img__text">codecanyon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="devider devider_red">
+            <div class="devider__line"></div>
+            <div class="devider__hexagon"></div>
+          </div>
+        </section>
+        <section class="teamwork">
+          <div class="container">
+            <h2 class="title">
+              our <span class="title title_color_red">teamwork</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="team teamwork__team">
+              <div class="team-item team-item__inner">
+                <div class="team-item__avatar">
+                  <div class="team-item__overlay">
+                    <div class="social">
+                      <a href="#" class="social__link icon-facebook"></a>
+                      <a href="#" class="social__link icon-twitter"></a>
+                      <a href="#" class="social__link icon-google-plus"></a>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/team/team-1.png"
+                    alt="Bruce Wayne"
+                    class="team-item__img"
+                  />
+                </div>
+                <div class="team-item__info">
+                  <p class="team-item__name">Bruce Wayne</p>
+                  <p class="team-item__job team-job__inner">Webdesigner</p>
+                </div>
+              </div>
+              <div class="team-item team-item__inner">
+                <div class="team-item__avatar">
+                  <div class="team-item__overlay">
+                    <div class="social">
+                      <a href="#" class="social__link icon-facebook"></a>
+                      <a href="#" class="social__link icon-twitter"></a>
+                      <a href="#" class="social__link icon-google-plus"></a>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/team/team-2.png"
+                    alt="Amr Srour"
+                    class="team-item__img"
+                  />
+                </div>
+                <div class="team-item__info">
+                  <p class="team-item__name">Amr Srour</p>
+                  <p class="team-item__job team-job__inner">Webdesigner</p>
+                </div>
+              </div>
+              <div class="team-item team-item__inner">
+                <div class="team-item__avatar">
+                  <div class="team-item__overlay">
+                    <div class="social">
+                      <a href="#" class="social__link icon-facebook"></a>
+                      <a href="#" class="social__link icon-twitter"></a>
+                      <a href="#" class="social__link icon-google-plus"></a>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/team/team-3.png"
+                    alt="SARAH DOE"
+                    class="team-item__img"
+                  />
+                </div>
+                <div class="team-item__info">
+                  <p class="team-item__name">SARAH DOE</p>
+                  <p class="team-item__job team-job__inner">Webdesigner</p>
+                </div>
+              </div>
+              <div class="team-item team-item__inner">
+                <div class="team-item__avatar">
+                  <div class="team-item__overlay">
+                    <div class="social">
+                      <a href="#" class="social__link icon-facebook"></a>
+                      <a href="#" class="social__link icon-twitter"></a>
+                      <a href="#" class="social__link icon-google-plus"></a>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/team/team-1.png"
+                    alt="Johan De"
+                    class="team-item__img"
+                  />
+                </div>
+                <div class="team-item__info">
+                  <p class="team-item__name">Johan De</p>
+                  <p class="team-item__job team-job__inner">Webdesigner</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="devider">
             <div class="devider__line"></div>
             <div class="devider__hexagon"></div>
           </div>
-          <div class="advantages about-us__advantages">
-            <div class="advantages-item">
-              <object
-                data="./img/about_us/flat-disign.svg"
-                type="image/svg+xml"
-              ></object>
-              <h4 class="advantages-item__title">flat design</h4>
-              <p class="advantages-item__text">
-                Lorem ipsum dolor sit amet cras vitae sodales ac nec
-                prellentesque vivamus eget mauris fusce sit amet
-              </p>
-            </div>
-            <div class="advantages-item">
-              <object
-                data="./img/about_us/retina-ready.svg"
-                type="image/svg+xml"
-              ></object>
-              <h4 class="advantages-item__title">retina ready</h4>
-              <p class="advantages-item__text">
-                Lorem ipsum dolor sit amet cras vitae sodales ac nec
-                prellentesque vivamus eget mauris fusce sit amet
-              </p>
-            </div>
-            <div class="advantages-item">
-              <object
-                data="./img/about_us/responsive.svg"
-                type="image/svg+xml"
-              ></object>
-              <h4 class="advantages-item__title">responsive</h4>
-              <p class="advantages-item__text">
-                Lorem ipsum dolor sit amet cras vitae sodales ac nec
-                prellentesque vivamus eget mauris fusce sit amet
-              </p>
-            </div>
-            <div class="advantages-item">
-              <object
-                data="./img/about_us/useful.svg"
-                type="image/svg+xml"
-              ></object>
-              <h4 class="advantages-item__title">clean &amp; useful</h4>
-              <p class="advantages-item__text">
-                Lorem ipsum dolor sit amet cras vitae sodales ac nec
-                prellentesque vivamus eget mauris fusce sit amet
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio bg-dark">
-        <h2 class="title title_color_white">portfolio</h2>
-        <div class="slider-portfolio">
-          <div class="control-block slider-portfolio__control">
-            <button class="control__btn">all</button>
-            <button class="control__btn">Illustration</button>
-            <button class="control__btn">Digital Art</button>
-            <button class="control__btn">Web design</button>
-          </div>
-          <div class="slide">
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
+        </section>
+        <section class="our-skills">
+          <div class="container">
+            <h2 class="title">
+              our <span class="title title_color_red">Skills</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="skill-block our-skills__skill-block">
+              <div class="skill-item skill-item__inner">
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                  <div class="circle-in"></div>
+                  <d class="progress__status">
+                    <span class="progress__percent">90</span>
+                    <span
+                      class="progress__percent progress__percent_color-black"
+                      >%</span
+                    >
+                  </d>
+                </div>
+                <div class="skill-item__description">
+                  <p class="skill-item__title skill-title__inner">photoshop</p>
+                  <p class="skill-item__text">
+                    Donec luctus tortor in placerat faucibus
+                  </p>
+                </div>
               </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-1.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
+              <div class="skill-item skill-item__inner">
+                <div class="progress">
+                  <div class="progress-bar progress-bar_left-20"></div>
+                  <div class="circle-in"></div>
+                  <d class="progress__status">
+                    <span class="progress__percent">80</span>
+                    <span
+                      class="progress__percent progress__percent_color-black"
+                      >%</span
+                    >
+                  </d>
+                </div>
+                <div class="skill-item__description">
+                  <p class="skill-item__title skill-title__inner">html</p>
+                  <p class="skill-item__text">
+                    Donec luctus tortor in placerat faucibus
+                  </p>
+                </div>
               </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-2.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
+              <div class="skill-item skill-item__inner">
+                <div class="progress">
+                  <div class="progress-bar progress-bar_left-30"></div>
+                  <div class="circle-in"></div>
+                  <d class="progress__status">
+                    <span class="progress__percent">70</span>
+                    <span
+                      class="progress__percent progress__percent_color-black"
+                      >%</span
+                    >
+                  </d>
+                </div>
+                <div class="skill-item__description">
+                  <p class="skill-item__title skill-title__inner">php</p>
+                  <p class="skill-item__text">
+                    Donec luctus tortor in placerat faucibus
+                  </p>
+                </div>
               </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-3.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
-              </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-4.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
-              </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-5.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
-              </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-6.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
-              </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-7.png"
-              />
-            </div>
-            <div class="slide__item">
-              <div class="slide__overlay">
-                <object
-                  data="./img/portfolio/slider/icon.svg"
-                  type="image/svg+xml"
-                ></object>
-                <p class="slide__overlay-text overlay-text__inner">
-                  design name
-                </p>
-              </div>
-              <img
-                class="slide__img"
-                src="./img/portfolio/slider/portfolio-8.png"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="features">
-        <div class="devider devider_red">
-          <div class="devider__line"></div>
-          <div class="devider__hexagon"></div>
-        </div>
-        <div class="container">
-          <h2 class="title">
-            our <span class="title title_color_red">product features</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="production features__production">
-            <div class="production-col">
-              <div class="production-item production-item__inner">
-                <p class="production-item__text production-text__inner">
-                  unlimited color options
-                </p>
-                <div class="production-item__icon"></div>
-              </div>
-              <div class="production-item production-item__inner">
-                <p class="production-item__text production-text__inner">
-                  outstanding support
-                </p>
-                <div class="production-item__icon"></div>
-              </div>
-              <div class="production-item production-item__inner">
-                <p class="production-item__text production-text__inner">
-                  retina ready
-                </p>
-                <div class="production-item__icon"></div>
-              </div>
-            </div>
-            <div class="production-picture production-picture__inner">
-              <img
-                class="production-picture__hexagon"
-                src="./img/production/shape-1.png"
-                alt="hexagon"
-              />
-              <img
-                class="production-picture__shape"
-                src="./img/production/shape-2.png"
-                alt="shape"
-              />
-              <img
-                class="production-picture__tablet"
-                src="./img/production/tablet.png"
-                alt="tablet"
-              />
-            </div>
-            <div class="production-col">
-              <div
-                class="production-item production-item__inner production-item_flex-flow-row-reverse"
-              >
-                <p class="production-item__text production-text__inner">
-                  unlimited color options
-                </p>
-                <div class="production-item__icon"></div>
-              </div>
-              <div
-                class="production-item production-item__inner production-item_flex-flow-row-reverse"
-              >
-                <p class="production-item__text production-text__inner">
-                  outstanding support
-                </p>
-                <div class="production-item__icon"></div>
-              </div>
-              <div
-                class="production-item production-item__inner production-item_flex-flow-row-reverse"
-              >
-                <p class="production-item__text production-text__inner">
-                  retina ready
-                </p>
-                <div class="production-item__icon"></div>
+              <div class="skill-item skill-item__inner">
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                  <div class="circle-in"></div>
+                  <d class="progress__status">
+                    <span class="progress__percent">90</span>
+                    <span
+                      class="progress__percent progress__percent_color-black"
+                      >%</span
+                    >
+                  </d>
+                </div>
+                <div class="skill-item__description">
+                  <p class="skill-item__title skill-title__inner">wordpress</p>
+                  <p class="skill-item__text">
+                    Donec luctus tortor in placerat faucibus
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="clients">
-        <div class="container">
-          <h2 class="title">
-            <span class="title title_color_white">our</span>
-            <span class="title title_color_red">clients</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="clients-content">
-            <div class="clients-slider">
-              <h3 class="clients-slider__title slider-title__inner">
-                happy clients say
-              </h3>
-              <div class="clients-slide">
-                <p class="clients-slide__text">
+        </section>
+        <section class="services bg-dark">
+          <div class="container">
+            <h2 class="title">
+              <span class="title title_color_white">our</span>
+              <span class="title title_color_red">services</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="services-block services-block__inner">
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div class="services-item__icon"></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    development
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div class="services-item__icon services-item__html"></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    HTML / CSS
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div class="services-item__icon services-item__wp"></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    Wordpress
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div class="services-item__icon services-item__app"></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    Applications
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div class="services-item__icon services-item__ui"></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    ui / ux design
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item services-item__inner">
+                <div class="services-item__header">
+                  <div
+                    class="services-item__icon services-item__responsive"
+                  ></div>
+                  <p class="services-item__title sercvices-title__inner">
+                    Responsive layout
+                  </p>
+                </div>
+                <div class="services-item__description">
+                  <p class="services-item__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer sed magna vel velit dignissim luctus eu in urna
+                    Dapibus egestas in turpis and Praesent faucibus nisl sit
+                    amet nulla sollicitudin.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="plans">
+          <div class="container">
+            <h2 class="title">
+              Plans <span class="title title_color_red">Bestseller</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="plans-block plans-block__inner">
+              <div class="plan-item plan-item__inner">
+                <div class="plan-item__title">reseller</div>
+                <div class="plan-item__price">
+                  199&dollar;
+                  <span class="plan-item__price plan-item__price_font-size-16"
+                    >year</span
+                  >
+                </div>
+                <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
+                <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
+                <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
+                <div class="plan-item__info">Traffic 10 TB</div>
+                <div class="plan-item__info">Connection 100 MB</div>
+                <div class="plan-item__info">5IP</div>
+                <div class="plan-item__info">
+                  <a href="#" class="plan-item__link plan-link__inner"
+                    >oreder now</a
+                  >
+                </div>
+              </div>
+              <div class="plan-item plan-item__inner">
+                <div class="plan-item__title">reseller</div>
+                <div class="plan-item__price">
+                  199&dollar;
+                  <span class="plan-item__price plan-item__price_font-size-16"
+                    >year</span
+                  >
+                </div>
+                <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
+                <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
+                <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
+                <div class="plan-item__info">Traffic 10 TB</div>
+                <div class="plan-item__info">Connection 100 MB</div>
+                <div class="plan-item__info">5IP</div>
+                <div class="plan-item__info">
+                  <a href="#" class="plan-item__link plan-link__inner"
+                    >oreder now</a
+                  >
+                </div>
+              </div>
+              <div class="plan-item plan-item__inner">
+                <div class="plan-item__title">reseller</div>
+                <div class="plan-item__price">
+                  199&dollar;
+                  <span class="plan-item__price plan-item__price_font-size-16"
+                    >year</span
+                  >
+                </div>
+                <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
+                <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
+                <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
+                <div class="plan-item__info">Traffic 10 TB</div>
+                <div class="plan-item__info">Connection 100 MB</div>
+                <div class="plan-item__info">5IP</div>
+                <div class="plan-item__info">
+                  <a href="#" class="plan-item__link plan-link__inner"
+                    >oreder now</a
+                  >
+                </div>
+              </div>
+              <div class="plan-item plan-item__inner">
+                <div class="plan-item__title">reseller</div>
+                <div class="plan-item__price">
+                  199&dollar;
+                  <span class="plan-item__price plan-item__price_font-size-16"
+                    >year</span
+                  >
+                </div>
+                <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
+                <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
+                <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
+                <div class="plan-item__info">Traffic 10 TB</div>
+                <div class="plan-item__info">Connection 100 MB</div>
+                <div class="plan-item__info">5IP</div>
+                <div class="plan-item__info">
+                  <a href="#" class="plan-item__link plan-link__inner"
+                    >oreder now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tweets bg-dark">
+          <div class="container">
+            <div class="tweets-block">
+              <div class="tweet">
+                <p class="tweet__icon icon-twitter"></p>
+                <p class="tweet__text tweet-text__inner">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer sed magna vel velit dignissim luctus eu in urna.
-                  Dapibus egestas turpis.
+                  Dapibus egestas turpis. turpis. turpis. sed magna vel velit
+                  dignissim luctus eu in urna. Dapibus egestas turpis.
                 </p>
-                <div class="person clients-slide__person">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="devider devider_red">
+            <div class="devider__line"></div>
+            <div class="devider__hexagon"></div>
+          </div>
+          <div class="container">
+            <h2 class="title">
+              our <span class="title title_color_red">Blog</span>
+            </h2>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur
+              <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+              Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+              egestas turpis.
+            </p>
+            <div class="blog-content blog-content__inner">
+              <div class="blog-item blog-item__inner">
+                <div class="blog-img-wrap">
                   <img
-                    src="./img/clients/avatar.png"
-                    alt="amr srour"
-                    class="person__avatar"
+                    class="blog-item__img"
+                    src="./img/blog/blog-1.png"
+                    alt="blog"
                   />
-                  <p class="person__name person-name__inner">amr srour</p>
                 </div>
-              </div>
-              <div class="clients-slider__control">
-                <button class="clients-slider__btn"></button>
-                <button class="clients-slider__btn"></button>
-                <button class="clients-slider__btn"></button>
-              </div>
-            </div>
-            <div class="clients-media">
-              <div class="clients-img clients-img__inner">
-                <div class="clients-img__icon"></div>
-                <p class="clients-img__text">graphicriver</p>
-              </div>
-              <div class="clients-img clients-img__inner">
-                <div class="clients-img__icon videohive"></div>
-                <p class="clients-img__text">videohive</p>
-              </div>
-              <div class="clients-img clients-img__inner">
-                <div class="clients-img__icon photodune"></div>
-                <p class="clients-img__text">photodune</p>
-              </div>
-              <div class="clients-img clients-img__inner">
-                <div class="clients-img__icon codecanyon"></div>
-                <p class="clients-img__text">codecanyon</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="devider devider_red">
-          <div class="devider__line"></div>
-          <div class="devider__hexagon"></div>
-        </div>
-      </section>
-      <section class="teamwork">
-        <div class="container">
-          <h2 class="title">
-            our <span class="title title_color_red">teamwork</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="team teamwork__team">
-            <div class="team-item team-item__inner">
-              <div class="team-item__avatar">
-                <div class="team-item__overlay">
-                  <div class="social">
-                    <a href="#" class="social__link icon-facebook"></a>
-                    <a href="#" class="social__link icon-twitter"></a>
-                    <a href="#" class="social__link icon-google-plus"></a>
+                <div class="blog-item__info blog-info__inner">
+                  <h3 class="blog-item__title">
+                    Lorem ipsum dolor sit amet, consectetur
+                  </h3>
+                  <div class="meta-block blog-meta__inner">
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-user"></span>
+                      <p class="meta-item__text">admin</p>
+                    </div>
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-bubble"></span>
+                      <p class="meta-item__text">1205</p>
+                    </div>
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-eye"></span>
+                      <p class="meta-item__text">1205</p>
+                    </div>
                   </div>
-                </div>
-                <img
-                  src="./img/team/team-1.png"
-                  alt="Bruce Wayne"
-                  class="team-item__img"
-                />
-              </div>
-              <div class="team-item__info">
-                <p class="team-item__name">Bruce Wayne</p>
-                <p class="team-item__job team-job__inner">Webdesigner</p>
-              </div>
-            </div>
-            <div class="team-item team-item__inner">
-              <div class="team-item__avatar">
-                <div class="team-item__overlay">
-                  <div class="social">
-                    <a href="#" class="social__link icon-facebook"></a>
-                    <a href="#" class="social__link icon-twitter"></a>
-                    <a href="#" class="social__link icon-google-plus"></a>
-                  </div>
-                </div>
-                <img
-                  src="./img/team/team-2.png"
-                  alt="Amr Srour"
-                  class="team-item__img"
-                />
-              </div>
-              <div class="team-item__info">
-                <p class="team-item__name">Amr Srour</p>
-                <p class="team-item__job team-job__inner">Webdesigner</p>
-              </div>
-            </div>
-            <div class="team-item team-item__inner">
-              <div class="team-item__avatar">
-                <div class="team-item__overlay">
-                  <div class="social">
-                    <a href="#" class="social__link icon-facebook"></a>
-                    <a href="#" class="social__link icon-twitter"></a>
-                    <a href="#" class="social__link icon-google-plus"></a>
-                  </div>
-                </div>
-                <img
-                  src="./img/team/team-3.png"
-                  alt="SARAH DOE"
-                  class="team-item__img"
-                />
-              </div>
-              <div class="team-item__info">
-                <p class="team-item__name">SARAH DOE</p>
-                <p class="team-item__job team-job__inner">Webdesigner</p>
-              </div>
-            </div>
-            <div class="team-item team-item__inner">
-              <div class="team-item__avatar">
-                <div class="team-item__overlay">
-                  <div class="social">
-                    <a href="#" class="social__link icon-facebook"></a>
-                    <a href="#" class="social__link icon-twitter"></a>
-                    <a href="#" class="social__link icon-google-plus"></a>
-                  </div>
-                </div>
-                <img
-                  src="./img/team/team-1.png"
-                  alt="Johan De"
-                  class="team-item__img"
-                />
-              </div>
-              <div class="team-item__info">
-                <p class="team-item__name">Johan De</p>
-                <p class="team-item__job team-job__inner">Webdesigner</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="devider">
-          <div class="devider__line"></div>
-          <div class="devider__hexagon"></div>
-        </div>
-      </section>
-      <section class="our-skills">
-        <div class="container">
-          <h2 class="title">
-            our <span class="title title_color_red">Skills</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="skill-block our-skills__skill-block">
-            <div class="skill-item skill-item__inner">
-              <div class="progress">
-                <div class="progress-bar"></div>
-                <div class="circle-in"></div>
-                <d class="progress__status">
-                  <span class="progress__percent">90</span>
-                  <span class="progress__percent progress__percent_color-black"
-                    >%</span
+                  <p class="blog-item__text">
+                    Integer ornare libero nisi. Duis ac magna urna. Nulla
+                    facilisi. Phasellus at ante magna. Quisque nec porta nulla.
+                    Suspendisse nec orci vel elit aliquet blandit in non orci.
+                    Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque
+                    penatibus ...
+                  </p>
+                  <a href="#" class="blog-item__link blog-link__inner"
+                    >view more</a
                   >
-                </d>
-              </div>
-              <div class="skill-item__description">
-                <p class="skill-item__title skill-title__inner">photoshop</p>
-                <p class="skill-item__text">
-                  Donec luctus tortor in placerat faucibus
-                </p>
-              </div>
-            </div>
-            <div class="skill-item skill-item__inner">
-              <div class="progress">
-                <div class="progress-bar progress-bar_left-20"></div>
-                <div class="circle-in"></div>
-                <d class="progress__status">
-                  <span class="progress__percent">80</span>
-                  <span class="progress__percent progress__percent_color-black"
-                    >%</span
-                  >
-                </d>
-              </div>
-              <div class="skill-item__description">
-                <p class="skill-item__title skill-title__inner">html</p>
-                <p class="skill-item__text">
-                  Donec luctus tortor in placerat faucibus
-                </p>
-              </div>
-            </div>
-            <div class="skill-item skill-item__inner">
-              <div class="progress">
-                <div class="progress-bar progress-bar_left-30"></div>
-                <div class="circle-in"></div>
-                <d class="progress__status">
-                  <span class="progress__percent">70</span>
-                  <span class="progress__percent progress__percent_color-black"
-                    >%</span
-                  >
-                </d>
-              </div>
-              <div class="skill-item__description">
-                <p class="skill-item__title skill-title__inner">php</p>
-                <p class="skill-item__text">
-                  Donec luctus tortor in placerat faucibus
-                </p>
-              </div>
-            </div>
-            <div class="skill-item skill-item__inner">
-              <div class="progress">
-                <div class="progress-bar"></div>
-                <div class="circle-in"></div>
-                <d class="progress__status">
-                  <span class="progress__percent">90</span>
-                  <span class="progress__percent progress__percent_color-black"
-                    >%</span
-                  >
-                </d>
-              </div>
-              <div class="skill-item__description">
-                <p class="skill-item__title skill-title__inner">wordpress</p>
-                <p class="skill-item__text">
-                  Donec luctus tortor in placerat faucibus
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="services bg-dark">
-        <div class="container">
-          <h2 class="title">
-            <span class="title title_color_white">our</span>
-            <span class="title title_color_red">services</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="services-block services-block__inner">
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div class="services-item__icon"></div>
-                <p class="services-item__title sercvices-title__inner">
-                  development
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div class="services-item__icon services-item__html"></div>
-                <p class="services-item__title sercvices-title__inner">
-                  HTML / CSS
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div class="services-item__icon services-item__wp"></div>
-                <p class="services-item__title sercvices-title__inner">
-                  Wordpress
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div class="services-item__icon services-item__app"></div>
-                <p class="services-item__title sercvices-title__inner">
-                  Applications
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div class="services-item__icon services-item__ui"></div>
-                <p class="services-item__title sercvices-title__inner">
-                  ui / ux design
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-            <div class="services-item services-item__inner">
-              <div class="services-item__header">
-                <div
-                  class="services-item__icon services-item__responsive"
-                ></div>
-                <p class="services-item__title sercvices-title__inner">
-                  Responsive layout
-                </p>
-              </div>
-              <div class="services-item__description">
-                <p class="services-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer sed magna vel velit dignissim luctus eu in urna
-                  Dapibus egestas in turpis and Praesent faucibus nisl sit amet
-                  nulla sollicitudin.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="plans">
-        <div class="container">
-          <h2 class="title">
-            Plans <span class="title title_color_red">Bestseller</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="plans-block plans-block__inner">
-            <div class="plan-item plan-item__inner">
-              <div class="plan-item__title">reseller</div>
-              <div class="plan-item__price">
-                199&dollar;
-                <span class="plan-item__price plan-item__price_font-size-16"
-                  >year</span
-                >
-              </div>
-              <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
-              <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
-              <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
-              <div class="plan-item__info">Traffic 10 TB</div>
-              <div class="plan-item__info">Connection 100 MB</div>
-              <div class="plan-item__info">5IP</div>
-              <div class="plan-item__info">
-                <a href="#" class="plan-item__link plan-link__inner"
-                  >oreder now</a
-                >
-              </div>
-            </div>
-            <div class="plan-item plan-item__inner">
-              <div class="plan-item__title">reseller</div>
-              <div class="plan-item__price">
-                199&dollar;
-                <span class="plan-item__price plan-item__price_font-size-16"
-                  >year</span
-                >
-              </div>
-              <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
-              <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
-              <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
-              <div class="plan-item__info">Traffic 10 TB</div>
-              <div class="plan-item__info">Connection 100 MB</div>
-              <div class="plan-item__info">5IP</div>
-              <div class="plan-item__info">
-                <a href="#" class="plan-item__link plan-link__inner"
-                  >oreder now</a
-                >
-              </div>
-            </div>
-            <div class="plan-item plan-item__inner">
-              <div class="plan-item__title">reseller</div>
-              <div class="plan-item__price">
-                199&dollar;
-                <span class="plan-item__price plan-item__price_font-size-16"
-                  >year</span
-                >
-              </div>
-              <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
-              <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
-              <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
-              <div class="plan-item__info">Traffic 10 TB</div>
-              <div class="plan-item__info">Connection 100 MB</div>
-              <div class="plan-item__info">5IP</div>
-              <div class="plan-item__info">
-                <a href="#" class="plan-item__link plan-link__inner"
-                  >oreder now</a
-                >
-              </div>
-            </div>
-            <div class="plan-item plan-item__inner">
-              <div class="plan-item__title">reseller</div>
-              <div class="plan-item__price">
-                199&dollar;
-                <span class="plan-item__price plan-item__price_font-size-16"
-                  >year</span
-                >
-              </div>
-              <div class="plan-item__info">CPU E3-1230 3.3GHz 8MB-V2</div>
-              <div class="plan-item__info">HARD 500GB SATA 7200 RPM</div>
-              <div class="plan-item__info">RAM 8GB DDR3 1333MHZ ECC</div>
-              <div class="plan-item__info">Traffic 10 TB</div>
-              <div class="plan-item__info">Connection 100 MB</div>
-              <div class="plan-item__info">5IP</div>
-              <div class="plan-item__info">
-                <a href="#" class="plan-item__link plan-link__inner"
-                  >oreder now</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="tweets bg-dark">
-        <div class="container">
-          <div class="tweets-block">
-            <div class="tweet">
-              <p class="tweet__icon icon-twitter"></p>
-              <p class="tweet__text tweet-text__inner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                sed magna vel velit dignissim luctus eu in urna. Dapibus egestas
-                turpis. turpis. turpis. sed magna vel velit dignissim luctus eu
-                in urna. Dapibus egestas turpis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="devider devider_red">
-          <div class="devider__line"></div>
-          <div class="devider__hexagon"></div>
-        </div>
-        <div class="container">
-          <h2 class="title">
-            our <span class="title title_color_red">Blog</span>
-          </h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur
-            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
-            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
-            egestas turpis.
-          </p>
-          <div class="blog-content blog-content__inner">
-            <div class="blog-item blog-item__inner">
-              <div class="blog-img-wrap">
-                <img
-                  class="blog-item__img"
-                  src="./img/blog/blog-1.png"
-                  alt="blog"
-                />
-              </div>
-              <div class="blog-item__info blog-info__inner">
-                <h3 class="blog-item__title">
-                  Lorem ipsum dolor sit amet, consectetur
-                </h3>
-                <div class="meta-block blog-meta__inner">
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-user"></span>
-                    <p class="meta-item__text">admin</p>
-                  </div>
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-bubble"></span>
-                    <p class="meta-item__text">1205</p>
-                  </div>
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-eye"></span>
-                    <p class="meta-item__text">1205</p>
-                  </div>
                 </div>
-                <p class="blog-item__text">
-                  Integer ornare libero nisi. Duis ac magna urna. Nulla
-                  facilisi. Phasellus at ante magna. Quisque nec porta nulla.
-                  Suspendisse nec orci vel elit aliquet blandit in non orci.
-                  Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque
-                  penatibus ...
-                </p>
-                <a href="#" class="blog-item__link blog-link__inner"
-                  >view more</a
-                >
               </div>
-            </div>
-            <div class="blog-item blog-item__inner">
-              <div class="blog-img-wrap">
-                <img
-                  class="blog-item__img"
-                  src="./img/blog/blog-2.png"
-                  alt="blog"
-                />
-              </div>
-              <div class="blog-item__info blog-info__inner">
-                <h3 class="blog-item__title">
-                  Lorem ipsum dolor sit amet, consectetur
-                </h3>
-                <div class="meta-block blog-meta__inner">
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-user"></span>
-                    <p class="meta-item__text">admin</p>
-                  </div>
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-bubble"></span>
-                    <p class="meta-item__text">1205</p>
-                  </div>
-                  <div class="meta-item meta-item__inner">
-                    <span class="meta-item__icon icon-eye"></span>
-                    <p class="meta-item__text">1205</p>
-                  </div>
+              <div class="blog-item blog-item__inner">
+                <div class="blog-img-wrap">
+                  <img
+                    class="blog-item__img"
+                    src="./img/blog/blog-2.png"
+                    alt="blog"
+                  />
                 </div>
-                <p class="blog-item__text">
-                  Integer ornare libero nisi. Duis ac magna urna. Nulla
-                  facilisi. Phasellus at ante magna. Quisque nec porta nulla.
-                  Suspendisse nec orci vel elit aliquet blandit in non orci.
-                  Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque
-                  penatibus ...
-                </p>
-                <a href="#" class="blog-item__link blog-link__inner"
-                  >view more</a
-                >
+                <div class="blog-item__info blog-info__inner">
+                  <h3 class="blog-item__title">
+                    Lorem ipsum dolor sit amet, consectetur
+                  </h3>
+                  <div class="meta-block blog-meta__inner">
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-user"></span>
+                      <p class="meta-item__text">admin</p>
+                    </div>
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-bubble"></span>
+                      <p class="meta-item__text">1205</p>
+                    </div>
+                    <div class="meta-item meta-item__inner">
+                      <span class="meta-item__icon icon-eye"></span>
+                      <p class="meta-item__text">1205</p>
+                    </div>
+                  </div>
+                  <p class="blog-item__text">
+                    Integer ornare libero nisi. Duis ac magna urna. Nulla
+                    facilisi. Phasellus at ante magna. Quisque nec porta nulla.
+                    Suspendisse nec orci vel elit aliquet blandit in non orci.
+                    Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque
+                    penatibus ...
+                  </p>
+                  <a href="#" class="blog-item__link blog-link__inner"
+                    >view more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a class="load-more blog__link"></a>
+          </div>
+        </section>
+        <section class="social-media bg-dark">
+          <div class="container">
+            <h2 class="title">
+              <span class="title title_color_white">Follow</span>
+              <span class="title title_color_red">Creativia</span>
+            </h2>
+            <div class="social-link social-media__link">
+              <div class="link-item link__inner">
+                <a href=""
+                  ><object
+                    class="link-item__icon"
+                    data="./img/social-media/facebook.svg"
+                    type="image/svg+xml"
+                  ></object
+                ></a>
+                <div class="link-item__count link-count__inner">20000</div>
+              </div>
+              <div class="link-item link__inner">
+                <a href=""
+                  ><object
+                    class="link-item__icon"
+                    data="./img/social-media/twitter.svg"
+                    type="image/svg+xml"
+                  ></object
+                ></a>
+                <div class="link-item__count link-count__inner">99900</div>
+              </div>
+              <div class="link-item link__inner">
+                <a href=""
+                  ><object
+                    class="link-item__icon"
+                    data="./img/social-media/pinterest.svg"
+                    type="image/svg+xml"
+                  ></object
+                ></a>
+                <div class="link-item__count link-count__inner">5000</div>
+              </div>
+              <div class="link-item link__inner">
+                <a href=""
+                  ><object
+                    class="link-item__icon"
+                    data="./img/social-media/google.svg"
+                    type="image/svg+xml"
+                  ></object
+                ></a>
+                <div class="link-item__count link-count__inner">200</div>
               </div>
             </div>
           </div>
-          <a class="load-more blog__link"></a>
-        </div>
-      </section>
-      <section class="social-media bg-dark">
-        <div class="container">
-          <h2 class="title">
-            <span class="title title_color_white">Follow</span>
-            <span class="title title_color_red">Creativia</span>
-          </h2>
-          <div class="social-link social-media__link">
-            <div class="link-item link__inner">
-              <a href=""
-                ><object
-                  class="link-item__icon"
-                  data="./img/social-media/facebook.svg"
-                  type="image/svg+xml"
-                ></object
-              ></a>
-              <div class="link-item__count link-count__inner">20000</div>
-            </div>
-            <div class="link-item link__inner">
-              <a href=""
-                ><object
-                  class="link-item__icon"
-                  data="./img/social-media/twitter.svg"
-                  type="image/svg+xml"
-                ></object
-              ></a>
-              <div class="link-item__count link-count__inner">99900</div>
-            </div>
-            <div class="link-item link__inner">
-              <a href=""
-                ><object
-                  class="link-item__icon"
-                  data="./img/social-media/pinterest.svg"
-                  type="image/svg+xml"
-                ></object
-              ></a>
-              <div class="link-item__count link-count__inner">5000</div>
-            </div>
-            <div class="link-item link__inner">
-              <a href=""
-                ><object
-                  class="link-item__icon"
-                  data="./img/social-media/google.svg"
-                  type="image/svg+xml"
-                ></object
-              ></a>
-              <div class="link-item__count link-count__inner">200</div>
-            </div>
+        </section>
+        <section class="contact">
+          <div class="devider devider_red">
+            <div class="devider__line"></div>
+            <div class="devider__hexagon"></div>
           </div>
-        </div>
-      </section>
-    </main>
+          <h2 class="title contact__title">
+            Fine us <span class="title title_color_red">here</span>
+          </h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur
+            <span class="subtitle subtitle_color_red">adipiscing elit.</span>
+            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus
+            egestas turpis.
+          </p>
+          <div class="map-wrap">
+            <!-- Сюда вставляется карта -->
+            <div id="map" class="map"></div>
+            <form class="form contact__form" action="">
+              <div class="form-container">
+                <h3 class="form__title">send message</h3>
+                <div class="form-element-wrap">
+                  <input
+                    class="form__input form-input__inner"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    class="form__input form-elem__inner"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <input
+                    class="form__input form-elem__inner"
+                    type="text"
+                    name="subject"
+                    placeholder="subject"
+                  />
+                  <textarea
+                    class="form__textarea form-elem__inner"
+                    name="comment"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                  <button class="form__btn form-elem__inner" type="submit">
+                    submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer bg-dark page__footer">
+        <a href="index.html" class="footer-logo footer-logo__inner">
+          <img src="./img/footer/logo.png" alt="logo Creativia" />
+        </a>
+        <p class="footer__author">Design by Amr Srour</p>
+      </footer>
+    </div>
+    <script src="./map.js"></script>
   </body>
 </html>
