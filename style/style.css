@@ -35,9 +35,15 @@ body {
   text-align: center;
   margin-top: 50px;
 }
-.subtitle_color_red {
-  color: #ff0033;
+.subtitle__link {
+  color: #00b8ff;
 }
+.subtitle__link:hover {
+  color: #ff0033;
+}  
+.subtitle__link:active {
+  color: #ff00bc;
+}  
 .container {
   max-width: 1170px;
   margin: auto;
@@ -133,7 +139,6 @@ body {
 .header {
   width: 100%;
   background-color: #000;
-  border-top: 3px solid #333333;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -151,7 +156,7 @@ body {
 .logo {
   position: absolute;
   left: 0;
-  top: -3px;
+  top: 0;
 }
 
 .logo__link {
@@ -218,7 +223,7 @@ body {
 }
 
 .navigation__link::before {
-  top: -3px;
+  top: 0;
   height: 3px;
 }
 
@@ -542,6 +547,7 @@ body {
   color: #999999;
   text-transform: uppercase;
   margin-top: 5px;
+  cursor: pointer;
 }
 .control__btn:hover {
   color: #c1c1c1;
@@ -1316,7 +1322,8 @@ body {
 .blog-item__inner {
   margin: 50px auto 0;
 }
-.blog-img-wrap {
+.blog-img {
+  display: block;
   max-width: 370px;
 }
 .blog-item__img {
@@ -1340,8 +1347,24 @@ body {
 .blog-item__title {
   font-family: "Raleway";
   font-size: 20px;
-  color: #333333;
   font-weight: 500;
+}
+.blog-item__title-link,
+.link-user,
+.link-comments {
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}
+.blog-item__title-link:hover,
+.link-user:hover,
+.link-comments:hover {
+  color: #ff0033;
+}
+.blog-item__title-link:focus,
+.link-user:focus,
+.link-comments:focus {
+  color: #ff00bc;
 }
 .meta-block {
   display: flex;
@@ -1436,6 +1459,9 @@ body {
 }
 .social-media__link {
   margin-top: 50px;
+}
+.link-item__link {
+  display: block;
 }
 .link-item__count {
   font-family: "Lato";

@@ -9,6 +9,10 @@
       fill: #ff0033;
     }
 
+    g {
+      cursor: pointer;
+    }
+
     g:hover .hexagon {
       fill: #ff0033;
     }
